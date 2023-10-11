@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' href='/css/style.css')
+        link(rel='shortcut icon' type='img/png' href='/img/favicon.png')
+        //- link(rel='stylesheet' href="https://fonts.googleapis.com/css?family=Lato:300,300i,700")
+        script (type="text/javascript")
+        //- meta(http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' 'sha256-LxEBaHL+WYGNcfRycfD646J6+VLtZXSkwhQl1s/m0Gw=' https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js;")
+        //- meta(http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://fonts.googleapis.com;")
+        title Natours | #{ title }
+    
+    body
+        // HEADER
+        include _header
+
+        // CONTENT
+        block content
+            h1 This is a placeholder heading
+
+        //FOOTER
+        include _footer
+        
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js')
+        //- meta(http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; script-src 'sha256-LxEBaHL+WYGNcfRycfD646J6+VLtZXSkwhQl1s/m0Gw=' 'self' https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.js;")
+        //- meta(http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.js;")
+        //- meta(http-equiv="Content-Security-Policy", content="default-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; script-src 'sha256-V+/U3qbjHKP0SaNQhMwYNm62gfWX4QHwPJ7We1PXokI=' https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.js; 'self' 'unsafe-inline'")
+        //- meta(http-equiv="Content-Security-Policy", content="default-src 'self' data: gap: 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; script-src 'sha256-V+/U3qbjHKP0SaNQhMwYNm62gfWX4QHwPJ7We1PXokI=' 'self' https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.js;")
+        //- meta(http-equiv="Content-Security-Policy", content="default-src 'self' data: gap: http://www.visitsingapore.com https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; script-src 'sha256-V+/U3qbjHKP0SaNQhMwYNm62gfWX4QHwPJ7We1PXokI=' 'self' 'unsafe-inline' 'unsafe-eval' filesystem: https:;")
+        script(src='/js/login.js' )
